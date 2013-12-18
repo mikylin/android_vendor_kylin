@@ -1,7 +1,7 @@
-CyanogenMod
+KylinMod
 ===========
 
-Maintainers (CyanogenMod 11.0):
+Maintainers (KylinMod kitkat):
 -----------------------------
 * __Acer A700:__ pawitp
 * __Amazon Kindle Fire 1st Edition:__ Hashcode
