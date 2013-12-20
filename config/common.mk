@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
 # Custom KM packages
     #KylinModLauncher \
 
+# KylinMod PhoneLoc Database
+PRODUCT_COPY_FILES +=  \
+    vendor/kylin/prebuilt/common/media/kylin-phoneloc.dat:system/media/kylin-phoneloc.dat
+
 PRODUCT_PACKAGES += \
     Launcher3 \
     DSPManager \
