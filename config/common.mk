@@ -88,6 +88,11 @@ PRODUCT_COPY_FILES += \
 # kM-specific init file
 PRODUCT_COPY_FILES += \
     vendor/kylin/prebuilt/common/etc/init.local.rc:root/init.km.rc
+	
+# Google IME
+PRODUCT_COPY_FILES += \
+    vendor/kylin/prebuilt/common/app/GoogleIME.apk:system/app/GoogleIME.apk \
+    vendor/kylin/prebuilt/common/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so
 
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
@@ -117,7 +122,6 @@ include vendor/kylin/config/themes_common.mk
 # Required KM packages
 PRODUCT_PACKAGES += \
     Development \
-    LatinIME \
     BluetoothExt
 
 # Optional KM packages
