@@ -143,11 +143,13 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     DSPManager \
     libcyanogen-dsp \
+    libscreenrecorder \
     audio_effects.conf \
     CMWallpapers \
     Apollo \
     CMFileManager \
     LockClock \
+    KylinModScreenRecorder \
     KylinModSetupWizard
 
 # CM Hardware Abstraction Framework
