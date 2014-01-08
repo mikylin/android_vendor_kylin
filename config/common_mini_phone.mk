@@ -1,9 +1,6 @@
 # Inherit common KM stuff
 $(call inherit-product, vendor/kylin/config/common.mk)
 
-# Bring in all audio files
-include frameworks/base/data/sounds/NewAudio.mk
-
 # Include KM audio files
 include vendor/kylin/config/km_audio.mk
 

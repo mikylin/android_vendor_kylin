@@ -94,11 +94,6 @@ PRODUCT_COPY_FILES += \
     vendor/kylin/prebuilt/common/app/GoogleIME.apk:system/app/GoogleIME.apk \
     vendor/kylin/prebuilt/common/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so
 
-# Compcache/Zram support
-PRODUCT_COPY_FILES += \
-    vendor/kylin/prebuilt/common/bin/compcache:system/bin/compcache \
-    vendor/kylin/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
-
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/kylin/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
@@ -156,9 +151,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
     org.cyanogenmod.hardware.xml
-
-PRODUCT_PACKAGES += \
-    CellBroadcastReceiver
 
 # Extra tools in KM
 PRODUCT_PACKAGES += \
