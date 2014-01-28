@@ -7,6 +7,9 @@ $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 # Include KM audio files
 include vendor/kylin/config/km_audio.mk
 
+# Include KM LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
+
 # Optional KM packages
 PRODUCT_PACKAGES += \
     Galaxy4 \

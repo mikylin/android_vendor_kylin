@@ -152,6 +152,7 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in KM
 PRODUCT_PACKAGES += \
+    libsepol \
     openvpn \
     e2fsck \
     mke2fs \
@@ -212,7 +213,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/kylin/overlay/common
 
 PRODUCT_VERSION_MAJOR = KK4
 PRODUCT_VERSION_MINOR = 42
-PRODUCT_VERSION_MAINTENANCE = 0-RC0
+PRODUCT_VERSION_MAINTENANCE = 0
 
 # Set KM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 
@@ -280,9 +281,17 @@ else
     endif
 endif
 
+ifeq ($(PRODUCT_VERSION_MAINTENANCE),0)
+    KMSTATS_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)
+else
+    KMSTATS_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)$(PRODUCT_VERSION_MAINTENANCE)
+endif
+
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.km.version=$(KM_VERSION) \
-  ro.modversion=$(KM_VERSION)
+  ro.modversion=$(KM_VERSION) \
+  ro.km.ui.name=KylinMod \
+  ro.km.ui.version=$(KMSTATS_VERSION)
 
 -include vendor/cm-priv/keys/keys.mk
 
