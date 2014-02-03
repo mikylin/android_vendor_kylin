@@ -29,7 +29,11 @@ $(eval TARGET_BOOTANIMATION_NAME := $(shell \
 endef
 $(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size)))
 
+ifeq ($(TARGET_BOOTANIMATION_HALF_RES),true)
+PRODUCT_BOOTANIMATION := vendor/kylin/prebuilt/common/bootanimation/halfres/$(TARGET_BOOTANIMATION_NAME).zip
+else
 PRODUCT_BOOTANIMATION := vendor/kylin/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip
+endif
 endif
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -126,12 +130,14 @@ PRODUCT_PACKAGES += \
     libemoji
 
 # Custom KM packages
-    #KylinModLauncher \
+PRODUCT_PACKAGES += \
+    KylinModLauncher
 
 # KylinMod PhoneLoc Database
 PRODUCT_COPY_FILES +=  \
     vendor/kylin/prebuilt/common/media/kylin-phoneloc.dat:system/media/kylin-phoneloc.dat
 
+# Custom KM packages
 PRODUCT_PACKAGES += \
     Launcher3 \
     DSPManager \
@@ -295,6 +301,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 -include vendor/cm-priv/keys/keys.mk
 
--include $(WORKSPACE)/hudson/image-auto-bits.mk
+-include $(WORKSPACE)/build_env/image-auto-bits.mk
 
 -include vendor/cyngn/product.mk
