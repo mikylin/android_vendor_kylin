@@ -24,14 +24,6 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     SoundRecorder
 
-PRODUCT_PACKAGES += \
-    VideoEditor \
-    libvideoeditor_jni \
-    libvideoeditor_core \
-    libvideoeditor_osal \
-    libvideoeditor_videofilters \
-    libvideoeditorplayer
-
 # Extra tools in KM
 PRODUCT_PACKAGES += \
     vim
