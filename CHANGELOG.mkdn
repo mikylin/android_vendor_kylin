@@ -1,11 +1,35 @@
-CyanogenMod
+KylinMod
 ===============
 
-Visit http://github.com/CyanogenMod for full source and git access.
+Visit http://github.com/KylinMod for full source and git access.
 
-Visit http://review.cyanogenmod.org for our Gerrit instance.
+Visit http://review.kylinmod.com for our Gerrit instance , just buidding....
 
-CHANGELOG (notable new features)
+Visit http://www.kylinmod.com for our home page.
+
+KylinMod CHANGELOG (notable new features)
+---------
+
+### 44.2.0
+* Common: Android 4.4 (Google)
+* Common: KitKat White UI Theme
+* Common: Power Saver Manager
+* Common: Multi-Window
+* Common: Screen Recorder
+* Common: Active Display
+* Common: Recent Application Lock
+* Common: Siderbar
+* Common: Statusbar traffic
+* Dialer: Speed Dial
+* Dialer: IP Dial
+* Dialer: Smart T9 Dial
+* Dialer: Direct Dial
+* Mms: Direct Dial
+* Settings: kylin stats Updater
+* Settings: Recent ram bar
+* Settings: New settings Interface for KylinRom
+
+CyanogenMod CHANGELOG (notable new features)
 ---------
 
 ### 11.0.0
