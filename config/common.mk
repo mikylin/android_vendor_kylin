@@ -99,7 +99,6 @@ PRODUCT_COPY_FILES += \
 # KylinMod prebuilts
 PRODUCT_COPY_FILES += \
     vendor/kylin/prebuilt/common/app/Appsearch.apk:system/app/Appsearch.apk \
-    vendor/kylin/prebuilt/common/app/Baidubrowser.apk:system/app/Baidubrowser.apk \
     vendor/kylin/prebuilt/common/app/iFlyIME.apk:system/app/iFlyIME.apk \
     vendor/kylin/prebuilt/common/app/MeasureApp.apk:system/app/MeasureApp.apk \
     vendor/kylin/prebuilt/common/app/Shuqi.apk:system/app/Shuqi.apk \
