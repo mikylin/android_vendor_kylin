@@ -96,18 +96,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/kylin/prebuilt/common/etc/init.local.rc:root/init.km.rc
 
-# KylinMod prebuilts
-PRODUCT_COPY_FILES += \
-    vendor/kylin/prebuilt/common/app/Appsearch.apk:system/app/Appsearch.apk \
-    vendor/kylin/prebuilt/common/app/iFlyIME.apk:system/app/iFlyIME.apk \
-    vendor/kylin/prebuilt/common/app/MeasureApp.apk:system/app/MeasureApp.apk \
-    vendor/kylin/prebuilt/common/app/Shuqi.apk:system/app/Shuqi.apk \
-    vendor/kylin/prebuilt/common/lib/libmsc-v7.so:system/lib/libmsc-v7.so \
-    vendor/kylin/prebuilt/common/lib/libsmartaiwrite-jni-v7.so:system/lib/libsmartaiwrite-jni-v7.so \
-    vendor/kylin/prebuilt/common/lib/libsmartaiwrite-jni-v8.so:system/lib/libsmartaiwrite-jni-v8.so \
-    vendor/kylin/prebuilt/common/lib/libsmartaiwrite-jni-v9.so:system/lib/libsmartaiwrite-jni-v9.so \
-    vendor/kylin/prebuilt/common/lib/libvadLib-v5.so:system/lib/libvadLib-v5.so
-
 # Google IME
 PRODUCT_COPY_FILES += \
     vendor/kylin/prebuilt/common/app/GoogleIME.apk:system/app/GoogleIME.apk \
