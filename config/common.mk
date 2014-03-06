@@ -234,7 +234,7 @@ ifndef KM_BUILDTYPE
 endif
 
 # Filter out random types, so it'll reset to UNOFFICIAL
-ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(KM_BUILDTYPE)),)
+ifeq ($(filter RELEASE NIGHTLY WEEKLY SNAPSHOT EXPERIMENTAL,$(KM_BUILDTYPE)),)
     KM_BUILDTYPE :=
 endif
 
