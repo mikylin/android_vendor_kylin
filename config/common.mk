@@ -98,14 +98,8 @@ PRODUCT_COPY_FILES += \
 
 # KylinMod prebuilts
 PRODUCT_COPY_FILES += \
-    vendor/kylin/prebuilt/common/app/LatinIME.apk:system/app/LatinIME.apk \
     vendor/kylin/prebuilt/common/app/Market.apk:system/app/Market.apk \
-    vendor/kylin/prebuilt/common/app/Stats.apk:system/app/Stats.apk \
-    vendor/kylin/prebuilt/common/lib/libmsc-v7.so:system/lib/libmsc-v7.so \
-    vendor/kylin/prebuilt/common/lib/libsmartaiwrite-jni-v7.so:system/lib/libsmartaiwrite-jni-v7.so \
-    vendor/kylin/prebuilt/common/lib/libsmartaiwrite-jni-v8.so:system/lib/libsmartaiwrite-jni-v8.so \
-    vendor/kylin/prebuilt/common/lib/libsmartaiwrite-jni-v9.so:system/lib/libsmartaiwrite-jni-v9.so \
-    vendor/kylin/prebuilt/common/lib/libvadLib-v5.so:system/lib/libvadLib-v5.so
+    vendor/kylin/prebuilt/common/app/MarketExt.apk:system/app/MarketExt.apk
 
 # Google IME
 PRODUCT_COPY_FILES += \
