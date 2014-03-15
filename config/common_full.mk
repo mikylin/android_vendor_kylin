@@ -8,7 +8,7 @@ $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 include vendor/kylin/config/km_audio.mk
 
 # Include KM LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/kylin/overlay/dictionaries
 
 # Optional KM packages
 PRODUCT_PACKAGES += \
