@@ -1,7 +1,3 @@
-km_mb886-userdebug
-km_xt907-userdebug
-km_xt925-userdebug
-km_xt926-userdebug
 km_moto_msm8960-userdebug
 km_moto_msm8960dt-userdebug
 km_edison-userdebug
@@ -10,6 +6,7 @@ km_targa-userdebug
 km_umts_spyder-userdebug
 km_mako-userdebug
 km_hammerhead-userdebug
+km_e970-userdebug
 km_e975-userdebug
 km_d802-userdebug
 km_i9100-userdebug
