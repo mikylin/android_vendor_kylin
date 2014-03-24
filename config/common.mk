@@ -95,7 +95,6 @@ PRODUCT_COPY_FILES += \
 # KylinMod prebuilts
 PRODUCT_COPY_FILES += \
     vendor/kylin/prebuilt/common/app/Market.apk:system/app/Market.apk \
-    vendor/kylin/prebuilt/common/app/GameCenter.apk:system/app/GameCenter.apk \
     vendor/kylin/prebuilt/common/app/iFlyIME.apk:system/app/iFlyIME.apk \
     vendor/kylin/prebuilt/common/app/Stats.apk:system/app/Stats.apk \
     vendor/kylin/prebuilt/common/lib/libmsc-v7.so:system/lib/libmsc-v7.so \
@@ -103,11 +102,6 @@ PRODUCT_COPY_FILES += \
     vendor/kylin/prebuilt/common/lib/libsmartaiwrite-jni-v8.so:system/lib/libsmartaiwrite-jni-v8.so \
     vendor/kylin/prebuilt/common/lib/libsmartaiwrite-jni-v9.so:system/lib/libsmartaiwrite-jni-v9.so \
     vendor/kylin/prebuilt/common/lib/libvadLib-v5.so:system/lib/libvadLib-v5.so
-
-# Google IME
-PRODUCT_COPY_FILES += \
-    vendor/kylin/prebuilt/common/app/GoogleIME.apk:system/app/GoogleIME.apk \
-    vendor/kylin/prebuilt/common/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
